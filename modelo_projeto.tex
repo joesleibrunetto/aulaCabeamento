@@ -167,27 +167,21 @@
 %% ====================================
 %% ====================================
 \section{Introdução}
-Projeto de rede cabeada para os espaços denominados como salas de professores. São duas salas, sendo uma delas para professores do curso de Ciëncia da Computação e a outra para professores do curso de Ciências Biologicas. As duas salas serão subdivididas em baias totalizando 16 (dezeseis) espaços, distribuindo-se dois professores por baia. Alem dos 32 (trinta e dois) pontos de entrada de rede para os professores, necessita-se tambem de 16 pontos extras para telefonia voip, sendo um por baia. Por fim um ponto para uma impressora de uso comunitãrio.
-O perfil de usuãrio limita-se a professores de informãtica e biologia somente, pois estes espaços sao exclusivos para os mesmos.
-Ser adequado ao espaço uma rack de 12U de fixaçao aerea, com os respectivos equipamentos necessãrios para a estrutura de lõgica como switchs e patch panels. A conexao vira de infraestrutura de rede cabeada jã existente, sendo necessario somente a passagem cabeada do switch mais prõximo ao local.
+Projeto de rede cabeada para os espaços denominados como salas de professores. São duas salas, sendo uma delas para professores do curso de Ciência da Computação e a outra para professores do curso de Ciências Biológicas. As duas salas serão subdivididas em baias totalizando 16 (dezesseis) espaços, alocando-se dois professores por baia. Alem dos 32 (trinta e dois) pontos de entrada de rede para os professores, necessita-se tambem de 16 pontos extras para futura instalação de telefonia voip, sendo um por baia. Por fim um ponto para uma impressora de uso comunitário.
+Será adicionada ao espaço uma rack de 12U de fixaçao aerea, com os respectivos equipamentos necessários para a estrutura de lógica como switchs e patch panels. A conexao virá de infraestrutura de rede cabeada já existente, sendo necessário somente a passagem cabeada partindo do switch mais próximo ao local.
 
-Explique nesta primeira seção qual seria o perfil do caso. Perfil do cliente, quantidade de colaboradores, quantidade de equipamentos de TI atualmente.
-
-Indique também nesta seção o escopo do projeto.
-
-Apresente um overview do parque tecnológico do caso.
+ 
 \subsection{Benefícios}
-Explique quais seriam os benefícios provenientes após a execução deste projeto.
+Esperamos com este projeto melhorar a disponibilidade de internet nos ambientes e ampliação da gerencia sobre os equipamentos na conexão cabeada.
 
 \subsection{Organizações Envolvidas}
-Coloque o nome de todas as organizações envolvidas. Se for um projeto real, identifique quais as responsabilidades de cada uma das organizações. É comum que em um projeto de redes (cabeamento), temos várias organizações, sendo que cada uma delas com uma determinada responsabilidade.
-
-Sugestão: crie uma tabela contento a relação delas.
-
-
+O projeto físico será executado pela Diretoria de Planejamento do campus com a atualização da planta baixa.
+O projeto de lógica será desenvolvido pela Coordenadoria de Gestão de Tecnologia de Informação.
+O projeto de readequação da elétrica será desenvolvido pelo Departamento de Serviços Gerais.
+A execução do projeto será divido entre o Departamento de Serviços Gerais e a Coordenadoria de Gestão de Tecnologia de Informação.
 
 \section{Estado atual}
-Aprente o estado atual da rede. Caso não tenha rede, desconsiderar esta seção.
+Atualmente as duas salas citadas dispõe apenas de conexão wireless providas de um access point fixado no teto de um corredor próximo.
 
 Caso tenha rede, deixe claro:
 \begin{itemize}
@@ -197,22 +191,36 @@ Caso tenha rede, deixe claro:
 \end{itemize}
 
 \section{Requisitos}
-Crie uma enumeração dos requisitos do projeto.
+Os requisitos do projeto são:
+- Fixação da rack.
+- Instalação das eletrocalhas para passagem da elétrica e lógica separadamente em todos os pontos determinados no projeto.
+- Passagem do cabeamento da elétrica e finalização dos pontos elétricos.
+- Passagem do cabeamento de lógica, inclusive o cabo provindo da estrutura de rede já existente.
+- Configuração e instalação de switchs e patch panels na rack.
+- Crimpagem dos cabos tanto na extremidade dos patch panels como nos conectores RJ-45 fêmea nos pontos de acesso.
+- Certificação dos pontos de lógica.
+- Conectorização entre os switchs e patch panels.
+- Cabeamento dos equipamentos.
 
 \section{Usuários e Aplicativos}
-Explique nesta seção os usuários atuais e o perfil de crescimento, se por exemplo, há estimativa na evolução da empresa no que tange a quantidade de usuários, pontos de redes, equipamentos.
- 
+
+O perfil de usuário limita-se a professores de informática e biologia somente, pois estes espaços sao exclusivos para os mesmos. Não há estimativa de crescimento nestes ambientes, pois o projeto já abrange o uso máximo dos espaços. Caso necessário novos pontos de lógica, ficarão disponíveis como sobra algumas portas dos equipamentos para tal, necessitando somente a passagem de novos cabos. As eletrocalhas para lógica também disponibilizará espaço extra para manobras.
 
 \subsection{Usuários}
-Crie uma relação da quantidade, perfil de usuários de seu projeto.
+Relação da quantidade x perfil de usuários:
+Máximo 16 baias para Professores Informática: Maior consumo de recursos de rede devido a aplicações características da área.
+Máximo 16 baias para Professores Biologia: Menor consumo de recursos de rede, perfil de acesso básico a internet.
 
 \subsection{Aplicativos}
-Crie uma relação dos aplicativos e seus níveis críticos de uso.
-
+Relação dos aplicativos x níveis críticos de uso.
+Navegadores internet: nível básico de uso dos recursos de rede.
+Aplicações diversas de uso geral como exemplo videoconferências: nível médio de uso dos recursos de rede.
+Aplicações avançadas de uso específico como exemplo mineração de dados: nível crítico de uso dos recursos de rede.
 
 \section{Estrutura predial existente}
 
-Explique aqui a planta física dos prédios
+Planta física das salas envolvidas no projeto:
+
 Pode ser anexada, em escala ou não.
 
 Deve conter uma descrição geral, indicando a possível distância entre os pontos de rede e restrições de instalação.
